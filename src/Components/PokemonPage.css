@@ -3,9 +3,6 @@
     max-width: 1000px;
     margin: auto;
     border-radius: 15px;
-/*     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; */
 }
 
 .imgWrapper {
@@ -15,10 +12,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-
-.infoWrapper {
-
 }

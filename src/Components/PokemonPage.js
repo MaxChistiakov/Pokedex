@@ -1,8 +1,8 @@
 import React from "react";
 import './PokemonPage.css'
-import './PokemonTypesColor.css'
+import '../Constants/PokemonTypesColor.css'
 
-import { pokemonPageCache } from './Cache'
+import { pokemonPageCache } from '../Constants/Cache'
 
 function PokemonPage() {
     const pokemonData = pokemonPageCache.list[0]

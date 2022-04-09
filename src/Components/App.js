@@ -1,9 +1,11 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Pokedex from './Pokedex'
+
 import './App.css';
-import PokemonPage from "./PokemonPage" 
+ 
 import Header from './Header'
+import Pokedex from './Pokedex'
+import PokemonPage from "./PokemonPage"
 import CapturedPokemons from './CapturedPokemons';
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       <Route path="/" element={<Pokedex />}/>
       <Route path="/pokemonPage/:id" element={<PokemonPage />}/>
       <Route path="/captured" element={<CapturedPokemons />}/>
+      <Route path="/captured/pokemonPage/:id" element={<PokemonPage/>}/>
     </Routes>
     </>
   )

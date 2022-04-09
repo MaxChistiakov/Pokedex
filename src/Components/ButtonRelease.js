@@ -1,7 +1,7 @@
 import React from "react"
 import './Button.css'
 
-import { pokemonStore } from './Store'
+import { pokemonStore } from '../Constants/Store'
 
 function ReleaseButton(props) {
     function releasePokemon() {
