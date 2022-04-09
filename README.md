@@ -1,3 +1,6 @@
+This is simple SPA based on React.js(Create React app) and MobX. It's very simple Pokedex.
+Well: 'npm i', then 'npm start' and enjoy.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
