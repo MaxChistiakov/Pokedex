@@ -1,0 +1,69 @@
+.card {
+    width: 230px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* 
+
+.catchButton {
+    margin-bottom: 10px;
+    all: unset;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px 16px;
+    font-size: 16px;
+    min-width: 150px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.6s ease;
+    margin-bottom: 10px;
+}
+
+.catchButton:hover:enabled {
+    border-color: #fff;
+}
+
+.catchButton:active:enabled {
+    background: #fff;
+    transition: 0.2s ease;
+}
+
+.catched {
+    background-color: cadetblue;
+    color: #CCCC66;
+}
+
+ */
