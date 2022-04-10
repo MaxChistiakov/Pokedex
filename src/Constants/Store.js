@@ -8,6 +8,7 @@ export class Store {
 
     addPokemon(data) {
         let x = this.storage.some(el => el.id === data.props.id)
+        data.props.catchedTime = new Date().toLocaleString()
 
         if (x === false) {
             this.storage.push(data.props) 

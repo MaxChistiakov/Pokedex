@@ -2,9 +2,11 @@ import React from "react";
 import './PokemonPage.css'
 import '../Constants/PokemonTypesColor.css'
 
+
+import { pokemonStore } from '../Constants/Store'
 import { pokemonPageCache } from '../Constants/Cache'
 
-function PokemonPage() {
+function PokemonPage ()  {
     const pokemonData = pokemonPageCache.list[0]
     const abilities = pokemonData.abilities.map(el => { return (el.ability.url)})
 
@@ -30,10 +32,12 @@ function PokemonPage() {
         const name = pokemonData.name
         const type = pokemonData.types.map(el => { return el.type.name}).join(' ')
         const weight = pokemonData.weight
-        const status = 1;
-        const date = String(' ЗАГЛУШКА ' + new Date())
         const wrap = 'wrapper'
         const style = `${wrap} ${type}`
+
+        const pokeIndex = pokemonStore.storage.map(el => el.id).indexOf(id)
+        const date = pokeIndex !== -1 ? pokemonStore.storage[pokeIndex].catchedTime : 'NOT CATCHED'
+        const status = pokeIndex !== -1 ? 'Catched' : 'NOT CATCHED';
 
         return (
             <div className={ style  }  >
